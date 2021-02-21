@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+/* My code for css Starting here */
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav li {
+  display: inline;
+  padding: 10px;
+}

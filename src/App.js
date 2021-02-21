@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from "./components/core/Nav";
+import Box from "./components/core/Box";
+import Box1 from "./components/core/Box1";
+import Box2 from "./components/core/Box2";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello my name is Mark Offitt.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Nav/>
+      <Box1/>
+      <Box2 name={"Jake"} age={21} color={"teal"} />
+      <Box2 name={"Taylor"} age={26} color={"blue"}/>
+      <Box2 name={"Chris"} age={24} color={"red"} />
     </div>
   );
 }
