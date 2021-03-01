@@ -1,6 +1,7 @@
 import React from 'react';
+import style from "./Style";
 
-function Box(props) {
+function Rectangle(props) {
 
     const[mess,setMess]=React.useState("hello");
     const [gray, setGray]=React.useState(false);
@@ -12,10 +13,9 @@ function Box(props) {
     };
 
     return (
-        <div>
-            <h1>{mess}</h1>
+        <div style={style.Box}>
             {gray===false&&<button onClick={grayOut}>{props.clk}</button>}
         </div>
     )
 }
-export default Box;
+export default Rectangle;
