@@ -12,7 +12,6 @@ import Box2 from "./components/core/Box2";
 function App() {
   return (
     <div className="App">
-        <Box/>
         <Rectangle/>
         <Rectangle/>
         <Rectangle/>
