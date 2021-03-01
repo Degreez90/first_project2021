@@ -27,7 +27,6 @@ function Block(props) {
 
     return (
         <div style={style.Box} onClick={grayOut}>
-            {gray===false&&<button onClick={grayOut}>{props.clk}</button>}
         </div>
     )
 }

@@ -14,7 +14,6 @@ function Rectangle(props) {
 
     return (
         <div style={style.Box}>
-            {gray===false&&<button onClick={grayOut}>{props.clk}</button>}
         </div>
     )
 }
