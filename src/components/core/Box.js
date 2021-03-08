@@ -14,7 +14,7 @@ function Box(props) {
     return (
         <div>
             <h1>{mess}</h1>
-            {gray===false&&<button onClick={grayOut}>{props.clk}</button>}
+            {gray===false&&<button onClick={grayOut}>{props.dt.name}</button>}
         </div>
     )
 }
