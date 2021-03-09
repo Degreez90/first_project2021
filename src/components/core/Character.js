@@ -64,7 +64,8 @@ function Character(props) {
                     <li> Name: {ch.name}</li>
                     <li>Superpower: {ch.power}</li>
                     <li>Age: {ch.age}</li>
-                    <li>Special Moves: {ch.moves[0]}</li>
+                    <li>Special Moves:</li>
+                    <li> {ch.moves[0]}</li>
                     <li>{ch.moves[1]}</li>
                     <li>{ch.moves[2]}</li>
                 </ul>
