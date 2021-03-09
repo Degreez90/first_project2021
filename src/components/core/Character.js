@@ -18,6 +18,19 @@ function Character(props) {
             moves: ["Edokuken", "Tiger Fury", "Wind Kick"]
         }];
 
+    const myArray = [{
+        name: 'mike', power: 'accelerate', color: '#235444', age: 19,
+        moves: ["walk", "run", "jump"]
+    },
+        {
+            name: 'Jake', power: 'laylow', color: '#007777', age: 35,
+            moves: ["crawl", "climb", "laydown"]
+        },
+        {
+            name: 'Pete', power: 'stare', color: '#554466', age: 50,
+            moves: ["look", "gaze", "search"]
+        }];
+
     const style={
         Box:{
             minHeight:"100px",
@@ -32,7 +45,20 @@ function Character(props) {
     };
 
     let list = Array.map((ch, idx) =>
+            <div key={idx} style={{backgroundColor: ch.color}}>
+                <ul style={style.Ul}>
+                    <li> Name: {ch.name}</li>
+                    <li>Superpower: {ch.power}</li>
+                    <li>Age: {ch.age}</li>
+                    <li>Special Moves: {ch.moves[0]}</li>
+                    <li>{ch.moves[1]}</li>
+                    <li>{ch.moves[2]}</li>
+                </ul>
+            </div>
+        // <div key={idx}>{dt.name}</div>
+    );
 
+    let myList = myArray.map((ch, idx) =>
             <div key={idx} style={{backgroundColor: ch.color}}>
                 <ul style={style.Ul}>
                     <li> Name: {ch.name}</li>
@@ -47,9 +73,11 @@ function Character(props) {
     );
 
 
+
     return (
         <div style={style.Box}>
             {list}
+            {myList}
         </div>
     )
 }
