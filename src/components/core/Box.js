@@ -11,9 +11,20 @@ function Box(props) {
 
     };
 
+    const grayOut2= ()=>(
+
+        <div>
+            <ul>
+                <li>this</li>
+            </ul>
+        </div>
+
+);
+
     return (
         <div>
             <h1>{mess}</h1>
+            {grayOut2()}
             {gray===false&&<button onClick={grayOut}>{props.dt.name}</button>}
         </div>
     )

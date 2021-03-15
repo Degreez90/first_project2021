@@ -1,7 +1,6 @@
 import React from "react";
-import style from "./style/Style";
 
-function Character(props) {
+function Character() {
 
     const [mess,newAge]=React.useState("hello");
 

@@ -1,24 +1,17 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
-function Box(props) {
+function Nav() {
 
-    const[mess,setMess]=React.useState("hello");
-    const [gray, setGray]=React.useState(false);
-
-    const grayOut= ()=>{
-        setMess("Good Bye");
-        setGray(true);
-
-    };
 
     return (
         <nav>
            <ul class="nav">
-               <li>Home</li>
-               <li>About</li>
-               <li>Contact</li>
+               <Link exact to={"/"}><li>Home</li></Link>
+               <Link to={"/data"}> <li>Objects</li></Link>
+               <Link to={"/cool"}><li>Cool</li></Link>
            </ul>
         </nav>
     )
 }
-export default Box;
+export default Nav;
