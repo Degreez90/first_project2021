@@ -5,7 +5,7 @@ function Cool(){
 
     return(
         <div>
-            <img src="./Assets/adam-cannell-RX7-FD-josh-castle-title.jpg"/>
+            <img src="./assets/adam-cannell-RX7-FD-josh-castle-title.jpg"/>
         </div>
 
     )
