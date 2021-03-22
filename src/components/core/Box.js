@@ -11,7 +11,7 @@ function Box(props) {
 
     };
 
-    const grayOut2= ()=>(
+    const grayOut2 = ()=>(
 
         <div>
             <ul>

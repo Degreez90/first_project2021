@@ -17,10 +17,10 @@ function Block(props) {
         Box:{
             width:"100px",
             height:"100px",
-            borderColor:props.border,
-            borderStyle:"dashed",
-            borderWidth:"3px",
-            backgroundColor:props.color
+            borderColor:"#000000",
+            borderStyle:"solid",
+            borderWidth:"1px",
+            backgroundColor:"#215986"
         }
 
     };

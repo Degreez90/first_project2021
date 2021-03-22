@@ -7,9 +7,8 @@ function Nav() {
     return (
         <nav>
            <ul class="nav">
-               <Link exact to={"/"}><li>Home</li></Link>
-               <Link to={"/data"}> <li>Objects</li></Link>
-               <Link to={"/cool"}><li>Cool</li></Link>
+               <Link exact to={"/"}><li><button>Counter</button></li></Link>
+               <Link to={"/data"}><li><button>Reset</button></li></Link>
            </ul>
         </nav>
     )
