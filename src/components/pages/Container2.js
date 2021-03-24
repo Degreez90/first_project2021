@@ -1,5 +1,4 @@
 import React from "react";
-import Box3 from "../core/Box3";
 
 function Container2(){
 
@@ -7,7 +6,7 @@ function Container2(){
         {box: 1}
     ]);
 
-    const{id, setId}= React.useState(1);
+    // const{id, setId}= React.useState(1);
     const [count, setCount]= React.useState(0);
     const [color, setColor]= React.useState("#215986")
 
@@ -18,19 +17,18 @@ function Container2(){
 
     const clearBox = ()=>{
         setCount(0);
+        setColor("#215986")
        const newBox = data.filter (n => n.box !== 2)
         setData(newBox);
     }
 
-    const cameleon = ()=>{
+    const chameleon = ()=>{
         const letters = "0123456789ABCDEF";
-        let color = "#";
+        let color2 = "#";
         for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
+            color2 += letters[Math.floor(Math.random() * 16)];
         }
-        setColor(color);
-
-
+        setColor(color2);
     }
 
     const style={
@@ -46,54 +44,26 @@ function Container2(){
 
     };
 
-    const [visual, setVisual]= React.useState(data);
-    const [add, setAdd]= React.useState(data);
+    // const [visual, setVisual]= React.useState(data);
+    // const [add, setAdd]= React.useState(data);
 
 //useEffect
     React.useEffect(()=>{
-        let newArray;
 
-        if(count % 2 == !0){
+        if(count % 2 !== 0){
             addBox();
-        }else if(count==="this"){
+        }
+        if(count >= 5 && count % 5 === 0){
+            chameleon();
+        }
+        else if(count === "this"){
             clearBox();
-        } if(count % 5 == 0){
-            cameleon();
         }
-        else{
-            newArray=data;
-        }
-
-
-        setVisual(newArray);
 
     },[count]);
 
-
-
-    // React.useEffect(()=>{
-    //     let newArray;
-    //
-    //     if(add==="one"){
-    //         setCount(count + 1)
-    //         newArray=data.filter(function(it) {
-    //             return it.name.includes("w");
-    //         });
-    //     }else if(add==="two"){
-    //         newArray=data.filter(function(it) {
-    //             return it.name.includes("g");
-    //         });
-    //     }else{
-    //         newArray=data;
-    //     }
-    //
-    //
-    //     setVisual(newArray);
-    //
-    // },[add]);
-
     let display = data.map((dt,idx)=>
-        <div key={idx} style={style.Box}></div>
+        <div key={idx} style={style.Box}> </div>
     );
 
     return(
