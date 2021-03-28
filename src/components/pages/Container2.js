@@ -8,7 +8,7 @@ function Container2(){
 
     // const{id, setId}= React.useState(1);
     const [count, setCount]= React.useState(0);
-    const [color, setColor]= React.useState("#215986")
+    const [color, setColor]= React.useState("#215986");
 
     const addBox = ()=>{
         // setCount(count +1);

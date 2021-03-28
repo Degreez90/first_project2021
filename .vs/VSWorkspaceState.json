@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.idea",
+    "\\public",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\core",
+    "\\src\\components\\pages"
+  ],
+  "SelectedNode": "\\src\\components\\pages\\Container2.js",
+  "PreviewInSolutionExplorer": false
+}
