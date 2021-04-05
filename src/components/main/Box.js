@@ -3,7 +3,6 @@ import style from "./style";
 import {Link} from "react-router-dom";
 
 function Box(props) {
-    console.log(props)
 
     return (
         <Link to={`/product/${props.dt.name}`}>
