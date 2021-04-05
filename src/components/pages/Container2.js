@@ -2,9 +2,7 @@ import React from "react";
 
 function Container2(){
 
-    const [data,setData] =React.useState([
-        {box: 1}
-    ]);
+    const [data,setData] =React.useState([{box: 1}]);
 
     // const{id, setId}= React.useState(1);
     const [count, setCount]= React.useState(0);

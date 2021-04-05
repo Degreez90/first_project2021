@@ -2,7 +2,7 @@ import React from 'react';
 
 function Box(props) {
 
-    const[mess,setMess]=React.useState("hello");
+    const[mess,setMess]=React.useState(props.dt.name);
     const [gray, setGray]=React.useState(false);
 
     const grayOut= ()=>{
