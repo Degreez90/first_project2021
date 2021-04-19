@@ -7,6 +7,8 @@ import People from "./components/pages/People";
 import Cool from "./components/pages/Cool";
 import Wrapper from "./components/main/Wrapper";
 import Funko from "./components/main/Funko";
+import FirePage from "./components/pages/FirePage";
+import coolPerson from "./components/pages/coolPerson";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
                 <Route path={"/people"} component={People} />
                 <Route path={"/cool"} component={Cool} />
                 <Route path={"/product/:details"} component={Funko}/>
+                <Route path={"/firepage"} component={FirePage}/>
+                <Route path={"/coolperson"} component={coolPerson}/>
             </Switch>
           </div>
       </Router>
