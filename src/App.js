@@ -15,14 +15,14 @@ function App() {
       <Router>
           <div className="App">
             <Switch>
-                <Route exact path={"/"} component={Wrapper} />
+                <Route exact path={"/"} component={coolPerson} />
                 <Route path={"/red/:id"} component={Red} />
                 <Route path={"/data"} component={Data} />
                 <Route path={"/people"} component={People} />
                 <Route path={"/cool"} component={Cool} />
                 <Route path={"/product/:details"} component={Funko}/>
                 <Route path={"/firepage"} component={FirePage}/>
-                <Route path={"/coolperson"} component={coolPerson}/>
+                {/*<Route path={"/coolperson"} component={coolPerson}/>*/}
             </Switch>
           </div>
       </Router>
