@@ -18,6 +18,8 @@ function Funko(props) {
         setData(newData);
     };
 
+    console.log(view)
+
     React.useEffect(()=>{
         if(data.filter(n => n.name === name))
         {
