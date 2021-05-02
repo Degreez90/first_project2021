@@ -33,7 +33,7 @@ const style={
 
     desc:{
         width:"100%",
-        height:"100px",
+        height:"150px",
         borderRadius:"0px 0px 9px 9px",
         borderColor:"#000000",
         overflow:"hidden",
@@ -43,7 +43,7 @@ const style={
 
     desc2:{
         width:"100%",
-        height:"100px",
+        height:"150px",
         borderRadius:"0px 0px 9px 9px",
         borderColor:"#000000",
         overflow:"hidden",
@@ -74,7 +74,8 @@ const style={
     },
 
     show:{
-        display: "block"
+        margin: "auto",
+        display: "inline-block"
     }
 
 };

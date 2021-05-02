@@ -92,7 +92,7 @@ function Admin(){
         <div>
             <div style={style.Nav}>
                 <Link to={"/"}><button style={style.Button}>Home</button></Link>
-                <button style={style.Button}>Cart</button>
+                <Link to={"/cart"}><button style={style.Button}>Cart</button></Link>
                 <Link to={"/admin"}> <button style={style.Button}>Admin</button></Link>
             </div>
             <h1>Products</h1>

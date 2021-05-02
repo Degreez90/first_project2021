@@ -74,7 +74,7 @@ function Main(){
     return(
         <div>
             <div style={style.Nav}>
-                <button style={style.Button}>Home</button>
+                <Link to={"/"}><button style={style.Button}>Home</button></Link>
                 <Link to={"/cart"}><button style={style.Button}>Cart</button></Link>
                 <Link to={"/admin"}> <button style={style.Button}>Admin</button></Link>
             </div>

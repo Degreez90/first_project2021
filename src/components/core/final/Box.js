@@ -6,7 +6,7 @@ import fire from "../../../Fire";
 function Box(props) {
 
     const [desc, setDesc] = React.useState(style.desc);
-    const [invis, vis] = React.useState(style.hide);
+    const [invis, vis] = React.useState(style.show);
 
     const db = fire.firestore();
 
@@ -16,7 +16,10 @@ function Box(props) {
         {
            setDesc(style.desc2)
         }
-        else{
+        if(props.pdc.stock == 0){
+            vis(style.hide)
+        }
+        else if(props.pdc.stock < 10 ){
             setDesc(style.desc)
         }
 
@@ -30,18 +33,19 @@ function Box(props) {
 
 
     return (
-        <Link to={`/product/${props.pdc.name}`} onClick={()=>vis(style.show)}>
+
             <div style={style.Box}>
-                <img alt={""} style={style.Img} src={props.pdc.img}/>
+                <Link to={`/product/${props.pdc.name}`} onClick={()=>vis(style.show)}>
+                    <img alt={""} style={style.Img} src={props.pdc.img}/></Link>
                 <div style={desc}>
                     <ul>
                         <li>Name: {props.pdc.name}</li>
-                        <li style={invis}>Stock: {props.pdc.stock}</li>
-                        <li style={invis}>Price: {props.pdc.price}</li>
+                        <li>Stock: {props.pdc.stock}</li>
+                        <li>Price: {props.pdc.price}</li>
                     </ul>
-                    <button onClick={()=>add(props.pdc)}> add to cart  </button>
+                    <button style={invis} onClick={()=>add(props.pdc)}> add to cart  </button>
                 </div>
-            </div></Link>
+            </div>
     )
 }
 export default Box;
