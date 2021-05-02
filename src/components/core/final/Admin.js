@@ -84,6 +84,7 @@ function Admin(){
             <div> <img style={style.Img} src={pdc.img}/> </div>
             <div>Name: {pdc.name}</div>
             <div>Stock: {pdc.stock}</div>
+            <div>Price: {pdc.price}</div>
             <button onClick={()=>handleDelete(pdc.id)}> delete me </button>
         </div>
     );
